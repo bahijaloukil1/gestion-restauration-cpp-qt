@@ -1,34 +1,18 @@
-#ifndef INSCRIPTION_H
-#define INSCRIPTION_H
+#include "connexion.h"
+#include "acullier.h"
+#include <QApplication>
 
-#include <QDialog>
-#include <QMessageBox>
-#include <QSqlDatabase>
-#include <QSqlQuery>
-#include <QSqlError>
-
-class Connexion;
-class Acculier;  // Ajout de la déclaration anticipée
-
-namespace Ui {
-class inscription;
-}
-
-class Inscription : public QDialog
+int main(int argc, char *argv[])
 {
-    Q_OBJECT
+    QApplication a(argc, argv);
 
-public:
-    explicit Inscription(QWidget *parent = nullptr);
-    ~Inscription();
+    connexion loginDialog;  // <<-- nom de la classe corrigé ici
 
-private slots:
-    void validerInscription();
+    if (loginDialog.exec() == QDialog::Accepted) {
+        Acullier acceuil;
+        acceuil.show();
+        return a.exec();
+    }
 
-private:
-    Ui::inscription *ui;
-    Connexion *connexionWindow;
-    Acculier *acculierWindow;  // Changement du nom de la variable
-};
-
-#endif // INSCRIPTION_H
+    return 0;
+}
