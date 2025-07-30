@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/background">
+        <file>img1.jpg</file>
+        <file>img2.jpg</file>
+        <file>img3.jpg</file>
+        <file>img4.jpg</file>
+        <file>img5.jpg</file>
+        <file>img6.jpg</file>
+        <file>img7.jpg</file>
+        <file>img8.jpg</file>
+        <file>img9.jpg</file>
+        <file>img10.jpg</file>
+        <file>img11.jpg</file>
+        <file>Dessert.jpg</file>
+        <file>img12.jpg</file>
+        <file>img13.jpg</file>
+        <file>img20.jpg</file>
+        <file>img23.jpg</file>
+        <file>img26.png</file>
+        <file>img27.jpeg</file>
+        <file>img28.jpg</file>
+        <file>img30.jpg</file>
+        <file>img31.jpg</file>
+        <file>image88.jpg</file>
+        <file>img88.jpg</file>
+        <file>img55.jpg</file>
+    </qresource>
+</RCC>
